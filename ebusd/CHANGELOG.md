@@ -1,5 +1,6 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 0.83
 ## 0.82
  - Add Configuration options
 
