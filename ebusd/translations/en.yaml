@@ -47,3 +47,6 @@ configuration:
   checkconfig:
     name: Check Config
     description: Add checkconfig to run
+  config:
+    name: Config
+    description: Configuration directory
