@@ -28,6 +28,7 @@ schema:
   scanconfig: "bool?"
   logareas: "list(main|network|bus|update|all)?"
   loglevel: "list(error|notice|info|debug)?"
+  config: "str?"
   mqtthost: "str?"
   mqttport: "int?"
   mqttuser: "str?"
