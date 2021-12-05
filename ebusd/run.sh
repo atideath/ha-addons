@@ -12,7 +12,7 @@ do
 done
 
 #other options
-declare options=( "device" "port" "latency" "logareas" "loglevel" "mqtthost" "mqttport" "mqttuser" "mqttpass")
+declare options=( "device" "port" "latency" "logareas" "loglevel" "mqtthost" "mqttport" "mqttuser" "mqttpass" "config")
 for optName in "${options[@]}"
 do
     if ! bashio::config.is_empty ${optName}; then
@@ -28,6 +28,6 @@ if ! (bashio::config.equals "loglevel" "error" || bashio::config.is_empty "foreg
     bashio::config.suggest "loglevel" "Consider setting the loglevel to 'error'."
 fi
 
-echo "> ebusd ${ebusd_args[*]} -c /config"
+echo "> ebusd ${ebusd_args[*]}"
 
 ebusd ${ebusd_args[*]}
