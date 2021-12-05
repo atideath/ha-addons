@@ -44,3 +44,6 @@ configuration:
   mqttretain:
     name: MQTT Retain
     description: All MQTT messages sent with retain flag
+  checkconfig:
+    name: Check Config
+    description: Add checkconfig to run
