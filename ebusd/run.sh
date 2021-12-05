@@ -28,6 +28,6 @@ if ! (bashio::config.equals "loglevel" "error" || bashio::config.is_empty "foreg
     bashio::config.suggest "loglevel" "Consider setting the loglevel to 'error'."
 fi
 
-echo "> ebusd ${ebusd_args[*]} -c /data"
+echo "> ebusd ${ebusd_args[*]} -c /config"
 
 ebusd ${ebusd_args[*]}
